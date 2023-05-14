@@ -1,4 +1,5 @@
-# AceDev Mini Projects
+# AceDev - Master HTML/CSS/JavaScript with Fun Projects
+
 
 This is the main repository for all of the projects in AceDeve channel.
 
@@ -10,3 +11,5 @@ This is the main repository for all of the projects in AceDeve channel.
 | 02 | [Tabbed Image Gallery](https://github.com/bjmzhang/AceDev-Projects/tree/main/tabbed-image-gallery) | [Live Demo](https://ace-dev-chi.vercel.app/tabbed-image-gallery/index.html) | [Tutorial](https://www.youtube.com/watch?v=UBvqyn81kgs)|
 | 03 | [Simple Counter](https://github.com/bjmzhang/AceDev-Projects/tree/main/simple-counter) | [Live Demo](https://ace-dev-chi.vercel.app/simple-counter/index.html) | [Tutorial](https://www.youtube.com/watch?v=9rYCzKhb4Ak)|
 | 04 | [Random Number Generator](https://github.com/bjmzhang/AceDev-Projects/tree/main/random-number-generator) | [Live Demo](https://ace-dev-chi.vercel.app/random-number-generator/index.html) | [Tutorial](https://www.youtube.com/watch?v=xlytkS0OzFw)|
+| 05 | [Random Hex Color Generator](https://github.com/bjmzhang/AceDev-Projects/tree/main/random-number-generator) | [Live Demo](https://acedev.vercel.app/random-hex-color-generator/index.html) | [Tutorial](https://www.youtube.com/watch?v=tzwftqAXzK0)|
+| 06 | [Animated Product Card](https://github.com/bjmzhang/AceDev-Projects/tree/main/random-number-generator) | [Live Demo](https://acedev.vercel.app/animated-product-card/index.html) | [Tutorial](https://www.youtube.com/watch?v=tzwftqAXzK0)|
