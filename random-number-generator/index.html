@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Random Number Generator</h3>
+      </div>
+      <div class="result">
+        <h1>Result</h1>
+      </div>
+      <div class="input-group">
+        <div class="input-wrapper">
+          <label for="min">Min:</label>
+          <input type="number" id="min" />
+        </div>
+        <div class="input-wrapper">
+          <label for="max">Max:</label>
+          <input type="number" id="max" />
+        </div>
+      </div>
+      <div class="button-group">
+        <button id="instantly">
+          <span class="material-symbols-outlined"> autorenew </span>
+          Generate Instantly
+        </button>
+        <button id="start-stop">
+          <span class="material-symbols-outlined"> timer </span>
+          Start Generating
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

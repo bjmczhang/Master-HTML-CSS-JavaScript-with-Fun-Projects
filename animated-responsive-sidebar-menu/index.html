@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Responsive Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <!-- Part 1 - HEADER -->
+      <header>
+        <div class="btn">
+          <div class="btn-item"></div>
+          <div class="btn-item"></div>
+          <div class="btn-item"></div>
+        </div>
+        <div class="avatar">
+          <div class="avatar-img">
+            <img src="images/Benjamin.png" alt="avatar" />
+          </div>
+          <div class="avatar-text">
+            <p>AceDev</p>
+            <h3>Benjamin Z.</h3>
+          </div>
+        </div>
+      </header>
+
+      <!-- HORIZONTAL RULE -->
+      <div class="line"></div>
+
+      <!-- Part 2 - MENU-BAR -->
+      <div class="menu-bar">
+        <!-- Part 2.1 MENU -->
+        <div class="menu">
+          <div class="title">
+            <p>Menu</p>
+          </div>
+          <ul class="menu-links">
+            <li class="nav-link nav-search">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-search"></i></div>
+              <input type="text" placeholder="Search..." />
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-home-alt"></i></div>
+              <div class="nav-text">Dashboard</div>
+              <div class="nav-icon-right"><i class="bx bx-cog"></i></div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-bell"></i></div>
+              <div class="nav-text">Notification</div>
+              <div class="nav-icon-right"></div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left">
+                <i class="bx bx-calendar-check"></i>
+              </div>
+              <div class="nav-text">Appointment</div>
+              <div class="nav-icon-right"><i class="bx bx-slider"></i></div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-heart"></i></div>
+              <div class="nav-text">Likes</div>
+              <div class="nav-icon-right"></div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-wallet"></i></div>
+              <div class="nav-text">Wallet</div>
+              <div class="nav-icon-right"></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- HORIZONTAL RULE -->
+        <div class="line"></div>
+
+        <!-- Part 2.2 Settings -->
+        <div class="settings">
+          <div class="title">
+            <p>Settings</p>
+          </div>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-user"></i></div>
+              <div class="nav-text">Profile</div>
+              <div class="nav-icon-right"></div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left">
+                <div class="moon-sun">
+                  <i class="bx bx-sun"></i><i class="bx bx-moon"></i>
+                </div>
+              </div>
+
+              <div class="nav-text">
+                <span>Light Mode</span>
+              </div>
+              <div class="nav-icon-right">
+                <div class="toggle-switch">
+                  <div class="switch"></div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-link">
+              <div class="link-bar"></div>
+              <div class="nav-icon-left"><i class="bx bx-log-out"></i></div>
+              <div class="nav-text">Logout</div>
+              <div class="nav-icon-right"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --bg-clr: #9febb3;
+  --container-clr: #fff;
+  --text-clr: #41453f;
+  --btn-primary: #304d35;
+  --btn-reset: #42d460;
+}
+
+body {
+  background: var(--bg-clr);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  width: 50rem;
+  height: 30rem;
+  background: var(--container-clr);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 20px 10px -15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.container .count {
+  font-size: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .reset {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container .reset a {
+  color: var(--text-clr);
+}
+
+.container .reset:active a {
+  color: var(--btn-reset);
+}
+
+.btn-left,
+.btn-right {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--btn-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--container-clr);
+  cursor: pointer;
+}
+
+.btn-left:active,
+.btn-right:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+:root {
+  --bg-clr: #f6f6fe;
+  --white: #fff;
+  --shadow-clr: rgba(89, 40, 82, 0.15);
+  --text-clr: #28313a;
+  --genBtn-clr: #f6f6fe;
+  --genBtn-hover: #ededfe;
+  --copyBtn-clr: 255, 255, 255;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  background: var(--bg-clr);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90vmin;
+  padding: 3rem 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  box-shadow: 0 3rem 5rem 0 var(--shadow-clr);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-clr);
+  margin-bottom: 5rem;
+}
+
+.color-container {
+  width: 80vmin;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.color-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-circle {
+  width: 12vmin;
+  height: 12vmin;
+  background: #ffdd88;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+#copy-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--copyBtn-clr), 0.6);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  opacity: 0;
+}
+
+#copy-btn:hover {
+  cursor: pointer;
+}
+
+#copy-btn span {
+  font-size: 1.5rem;
+  color: var(--text-clr);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.color-circle:hover #copy-btn {
+  opacity: 1;
+}
+
+#gen-btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: var(--genBtn-clr);
+  padding: 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#gen-btn:hover {
+  background: var(--genBtn-hover);
+}
