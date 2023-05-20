@@ -1,7 +1,7 @@
 # AceDev - Master HTML/CSS/JavaScript with Fun Projects
 
 
-This is the main repository for all of the projects in AceDeve channel.
+This is the main repository for all of the projects in AceDev channel.
 
 - [Channel Link](https://www.youtube.com/channel/UC7J9JiVaI959e2VbRhsDopQ)
 
