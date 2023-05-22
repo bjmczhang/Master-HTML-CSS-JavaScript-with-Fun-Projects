@@ -1,0 +1,95 @@
+/* Asterisk Selector * Targets All Elements On a Webpage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  --bg-clr: #d8d8d8;
+  --text-clr: #5d6675;
+  --menu-clr: #ffffff;
+  --primary-clr: #f45770;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Custom Cursor */
+  cursor: url('./images/cursor.svg'), auto;
+}
+
+.container h1 {
+  font-weight: 500;
+  position: absolute;
+  top: 20%;
+}
+
+.container img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu {
+  width: 18rem;
+  background: white;
+  color: var(--text-clr);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  /* Default Hidden */
+  display: none;
+}
+
+.menu li {
+  height: 4rem;
+  margin: 1rem;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: var(--primary-clr);
+  background: #f4577022;
+
+  /* Custom Hand Cursor */
+  cursor: url('./images/cursor-hand.svg'), auto;
+}
