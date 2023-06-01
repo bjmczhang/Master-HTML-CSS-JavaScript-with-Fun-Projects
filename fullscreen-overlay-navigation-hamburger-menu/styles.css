@@ -1,0 +1,206 @@
+/* Asterisk Selector * Targets All Elements On a Webpage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --grey: #eee;
+  --trans-03: all 0.3s ease-in;
+  --trans-05: all 0.5s ease-in;
+  --trans-10: flex 1s ease;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* -webkit-user-select: none;
+  user-select: none; */
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container h1 {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(./images/bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.menu-icon {
+  width: 4rem;
+  height: 4rem;
+  /* background: red; */
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  z-index: 20;
+}
+
+.line {
+  width: 3rem;
+  height: 2px;
+  background: var(--grey);
+  margin: 3px 0;
+  transition: var(--trans-05);
+}
+
+.change .line-1 {
+  transform-origin: center;
+  transform: translateY(8px) rotate(-45deg);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform-origin: center;
+  transform: translateY(-8px) rotate(45deg);
+}
+
+.menu-list {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: var(--trans-03);
+}
+
+.change .menu-list {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item-1 {
+  background: url(./images/item1.jpg);
+}
+
+.item-2 {
+  background: url(./images/item2.jpg);
+}
+
+.item-3 {
+  background: url(./images/item3.jpg);
+}
+
+.item-4 {
+  background: url(./images/item4.jpg);
+}
+
+.item-5 {
+  background: url(./images/item5.jpg);
+}
+
+.menu-item {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: var(--trans-10);
+}
+
+.menu-item a {
+  color: var(--white);
+  font-size: 1.8rem;
+  opacity: 0.5;
+  padding: 1rem 3rem;
+  position: relative;
+
+  transition: var(--trans-03);
+}
+
+.menu-list .active {
+  filter: none;
+  flex: 3;
+}
+
+.menu-list .active a {
+  font-size: 5rem;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Menu Item Text Hover Effect */
+
+.menu-item a::before,
+.menu-item a::after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 4px solid var(--white) transparent;
+  box-sizing: border-box;
+}
+
+.menu-item a::before {
+  bottom: 0;
+  left: 0;
+}
+
+.menu-item a::after {
+  top: 0;
+  right: 0;
+}
+
+.menu-item a:hover::before {
+  height: 100%;
+  width: 100%;
+  border: 4px solid var(--white);
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
+
+.menu-item a:hover::after {
+  height: 100%;
+  width: 100%;
+  border: 4px solid var(--white);
+  border-left: none;
+  border-top: none;
+  transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
